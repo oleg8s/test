@@ -21,8 +21,8 @@ async function testE2eResult() {
     await passwordInput.type('bB!123456');
 
     console.log('Шаг 4: Нажать на кнопку');
-    const pressButton = await page.$('[name="Войти"]');
-    await pressButton.click();
+    const loginButton = await page.$('[name="Войти"]');
+    await loginButton.click();
 
     await page.screenshot({path: 'testTaxiResult.png'});
 
