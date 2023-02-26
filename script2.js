@@ -21,12 +21,12 @@ async function testE2eResult() {
     await passwordInput.type('Tu4321!');
 
     console.log('Шаг 4: Нажать на кнопку');
-    const pressButton = await page.$('[name="Войти"]');
-    await pressButton.click();
+    const loginButton = await page.$('[name="Войти"]');
+    await loginButton.click();
 
     // await page.screenshot({path: 'testE2eResult.png'});
 
 
 }
-s
+
 testE2eResult();
